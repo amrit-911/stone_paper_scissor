@@ -70,7 +70,8 @@ function tryAgain1() {
     // <button class="paper" onclick="butt('paper')"><img src="paper.png" alt=""></button>
     // `
     // whoWin.innerHTML = ""
-    scoreText.innerHTML = 0
+    scoreText.innerHTML = 0;
+    score = 0;
 }
 
 function tryAgain2() {
