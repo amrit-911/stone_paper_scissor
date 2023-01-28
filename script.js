@@ -46,7 +46,7 @@ function gameOver(x, y, z) {
     document.querySelector(".main").innerHTML = `<div class="game-over">
 <div>
     <div style="margin-bottom:20px; font-size:10px">YOU PICKED</div>
-    <button class="style style2 ${x}" style="cursor:default; box-shadow:none"><img src="${x}.png" alt=""></button>
+    <button class="style style2 ${x}" style="cursor:default;"><img src="${x}.png" alt=""></button>
 </div>
 <div>
     <div class="who-win">${z}</div>
@@ -56,7 +56,7 @@ function gameOver(x, y, z) {
 <div>
     <div style="margin-bottom:20px; font-size:10px">PC PICKED</div>
 
-    <button class="style style2 ${y}" style="cursor:default;box-shadow:none"><img src="${y}.png" alt=""></button>
+    <button class="style style2 ${y}" style="cursor:default;"><img src="${y}.png" alt=""></button>
 </div>
 </div>
 `
