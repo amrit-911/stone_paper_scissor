@@ -77,7 +77,7 @@ function gameOver(x, y, z) {
     }
     giveBorder[num].classList.add("win-border")
 
-}
+
 }
 
 
