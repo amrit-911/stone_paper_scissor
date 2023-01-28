@@ -60,6 +60,24 @@ function gameOver(x, y, z) {
 </div>
 </div>
 `
+    let num = 0
+    giveBorder = document.querySelectorAll(".style2")
+    giveBorder[num].classList.remove("win-border")
+    if (z == "YOU WIN") {
+        num = 0;
+        giveBorder[1].style.boxShadow = "none"
+    } else if (z == "YOU LOST") {
+        num = 1
+        giveBorder[0].style.boxShadow = "none"
+
+    } else if (z == "TIE") {
+        giveBorder[0].style.boxShadow = "none"
+        giveBorder[1].style.boxShadow = "none"
+
+    }
+    giveBorder[num].classList.add("win-border")
+
+}
 }
 
 
