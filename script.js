@@ -1,10 +1,7 @@
 let gameArray = ["stone", "paper", "scissor"]
-
 let score = 0
 let scoreText = document.querySelector(".score")
 let whoWin = document.querySelector(".who-win")
-
-
 
 function butt(player) {
     let ans = ""
@@ -35,18 +32,10 @@ function butt(player) {
 }
 
 function gameOver(x, y, z) {
-
-    //     document.querySelector(".main").innerHTML = `<div class="game-over">
-    //     <div class="style ${x}" style="cursor:default;"><img src="${x}.png" alt="">you choosed ${x}</div>
-
-    //     <div class="style ${y}" style="cursor:default;"><img src="${y}.png" alt="">Computer choosed ${y}</div>
-    // </div> 
-    // <button class="try-again-2" onclick="tryAgain2()">Try Again2</button>
-    // `
     document.querySelector(".main").innerHTML = `<div class="game-over">
 <div>
     <div style="margin-bottom:20px; font-size:10px">YOU PICKED</div>
-    <button class="style style2 ${x}" style="cursor:default;"><img src="${x}.png" alt=""></button>
+    <button class="style2 ${x}" style="cursor:default; "><img class="img-mobile" src="${x}.png" alt=""></button>
 </div>
 <div>
     <div class="who-win">${z}</div>
@@ -56,40 +45,25 @@ function gameOver(x, y, z) {
 <div>
     <div style="margin-bottom:20px; font-size:10px">PC PICKED</div>
 
-    <button class="style style2 ${y}" style="cursor:default;"><img src="${y}.png" alt=""></button>
+    <button class="style2 ${y}" style="cursor:default;"><img class="img-mobile" src="${y}.png" alt=""></button>
 </div>
 </div>
 `
     let num = 0
     giveBorder = document.querySelectorAll(".style2")
-    giveBorder[num].classList.remove("win-border")
     if (z == "YOU WIN") {
         num = 0;
-        giveBorder[1].style.boxShadow = "none"
     } else if (z == "YOU LOST") {
         num = 1
-        giveBorder[0].style.boxShadow = "none"
-
     } else if (z == "TIE") {
-        giveBorder[0].style.boxShadow = "none"
-        giveBorder[1].style.boxShadow = "none"
-
+        num = null
     }
     giveBorder[num].classList.add("win-border")
-
-
 }
 
-
 function tryAgain1() {
-    // document.querySelector(".game-over").innerHTML = ""
-    // document.querySelector(".main").innerHTML = `<button class="scissor" onclick="butt('scissor')"><img src="scissor.png" alt=""></button>
-    // <button class="stone" onclick="butt('stone')"><img src="stone.png" alt=""></button>
-    // <button class="paper" onclick="butt('paper')"><img src="paper.png" alt=""></button>
-    // `
-    // whoWin.innerHTML = ""
-    scoreText.innerHTML = 0;
-    score = 0;
+    scoreText.innerHTML = 0
+    score = 0
 }
 
 function tryAgain2() {
@@ -103,10 +77,7 @@ function tryAgain2() {
 <div>
     <button class="paper style paper-margin" onclick="butt('paper')"><img src="paper.png" alt=""></button>
 </div>
-
-
-<div class="try-again-1" onclick="tryAgain1()">Try Again</div>
-    `
+<div class="try-again-1" onclick="tryAgain1()">Try Again</div>`
 }
 
 function rules() {
