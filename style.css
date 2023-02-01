@@ -300,3 +300,23 @@ span {
 .rules-show {
     visibility: visible;
 }
+@media screen and (max-width: 992px) {
+    .name {
+        width: 20%;
+    }
+    .head .name h1 {
+        font-size: 20px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .style {
+        margin-bottom: 80px;
+    }
+    .scissor {
+        margin: 0 60px 70px 0
+    }
+    .stone {
+        margin: 0 0px 70px 60px
+    }
+}
