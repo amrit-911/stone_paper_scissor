@@ -70,26 +70,28 @@ body {
 }
 
 .img1 {
-    position: absolute;
-    top: 350px;
-    left: 600px
+    position: relative;
+    margin: auto;
+    bottom: 140px;
 }
 
 .img2 {
-    position: absolute;
-    top: 490px;
-    left: 560px;
-    transform: rotate(50deg);
-    width: 250px;
+    position: relative;
+    margin: auto;
+    transform: rotate(55deg);
+    bottom: 40px;
+    right: 80px;
 }
 
 .img3 {
+    position: relative;
     width: 250px;
-    position: absolute;
-    top: 490px;
-    left: 670px;
-    transform: rotate(-50deg);
+    margin: auto;
+    bottom: 40px;
+    transform: rotate(-55deg);
+    left: 65px;
 }
+
 
 .main {
     display: flex;
